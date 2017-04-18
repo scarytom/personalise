@@ -1,6 +1,7 @@
 #!/bin/bash -eu
 
 SCRIPT_DIR="$( cd "$( dirname "$( readlink -f "${BASH_SOURCE[0]}" )" )" && pwd )"
+mkdir -p "${HOME}/bin"
 
 link_file() {
   TO="${1}"
@@ -34,3 +35,4 @@ HOST_SPECIFIC_DOTFILE_DIR="${SCRIPT_DIR}/dotfiles/${HOSTNAME}"
 if [ -d "${HOST_SPECIFIC_DOTFILE_DIR}" ]; then
   apply_dotfile_dir "${HOST_SPECIFIC_DOTFILE_DIR}"
 fi
+
