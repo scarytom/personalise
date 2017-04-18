@@ -13,14 +13,24 @@ link_file() {
       echo "noop for ${FROM}"
     fi
   elif [ -e "${FROM}" ]; then
-    echo "conflict with existing file at ${FROM}"
+    echo "diff ${FROM} ${TO}"
   else
     echo "ln -s ${TO} ${FROM}"
+    ln -s "${TO}" "${FROM}"
   fi
 }
 
-DOTFILE_DIR="${SCRIPT_DIR}/dotfiles/common"
-for DOTFILE in $( find -H "${DOTFILE_DIR}" -type f ); do
-  TARGET="${HOME}/${DOTFILE#${DOTFILE_DIR}/}"
-  link_file "${DOTFILE}" "${TARGET}"
-done
+apply_dotfile_dir() {
+  DOTFILE_DIR="${1}"
+  for DOTFILE in $( find -H "${DOTFILE_DIR}" -type f ); do
+    TARGET="${HOME}/${DOTFILE#${DOTFILE_DIR}/}"
+    link_file "${DOTFILE}" "${TARGET}"
+  done
+}
+
+apply_dotfile_dir "${SCRIPT_DIR}/dotfiles/common"
+
+HOST_SPECIFIC_DOTFILE_DIR="${SCRIPT_DIR}/dotfiles/${HOSTNAME}"
+if [ -d "${HOST_SPECIFIC_DOTFILE_DIR}" ]; then
+  apply_dotfile_dir "${HOST_SPECIFIC_DOTFILE_DIR}"
+fi
