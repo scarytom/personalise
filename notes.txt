@@ -1,0 +1,49 @@
+install git
+clone scarytom/personalise
+run personalise.sh
+
+install terminator
+add keyboard shortcut ctrl+\ for terminator
+
+remove bunch of things from favourites
+
+download and install chrome (not chromium)
+add to panel and favourites
+set up google accounts
+
+forticlientsslvpn
+remove mdns from /etc/nsswitch.conf
+
+
+generate ssh key
+add to puppet and gitolite
+
+install htop curl tig silversearcher-ag
+install openssh-server
+install openjdk-8-jdk openjdk-8-source openjdk-8-doc openjdk-8-jre
+
+gradle
+gradle init.d/timgroup
+
+tigervnc viewer/server
+x11vnc
+
+keyboard bindings
+unbind annoying XFCE keybindings – Settings » Window Manager » Keyboard 
+  unbind Workspace 11, Upper Workspace and Bottom Workspace etc. and maximise
+
+mysql
+sudo apt-get install mysql-server mysql-client
+CREATE USER 'tdenley'@'%' IDENTIFIED BY '';
+GRANT ALL PRIVILEGES ON *.* TO 'tdenley'@'%' WITH GRANT OPTION;
+CREATE USER ''@'%' IDENTIFIED BY '';
+GRANT ALL PRIVILEGES ON *.* TO ''@'%' WITH GRANT OPTION;
+
+TODO:
+gvim
+mumble
+intellij
+setup hangouts
+gedit
+mcollective
+
