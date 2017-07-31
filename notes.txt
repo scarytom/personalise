@@ -13,6 +13,7 @@ set up google accounts
 
 forticlientsslvpn
 remove mdns from /etc/nsswitch.conf
+create .local/share/applications/forticlient.desktop
 
 
 generate ssh key
@@ -21,10 +22,15 @@ add to puppet and gitolite
 install htop curl tig silversearcher-ag
 install openssh-server
 install openjdk-8-jdk openjdk-8-source openjdk-8-doc openjdk-8-jre
-
-gradle
-gradle init.d/timgroup
-
+install rdesktop
+install qemu-kvm libvirt-bin ubuntu-vm-builder bridge-utils virt-manager ssh-askpass
+install gimp gnumeric
+install mumble
+install apache2-utils #(for htpasswd)
+install mplayer
+install pip3
+install iotop
+install vim-gtk3
 tigervnc viewer/server
 x11vnc
 
@@ -38,12 +44,10 @@ CREATE USER 'tdenley'@'%' IDENTIFIED BY '';
 GRANT ALL PRIVILEGES ON *.* TO 'tdenley'@'%' WITH GRANT OPTION;
 CREATE USER ''@'%' IDENTIFIED BY '';
 GRANT ALL PRIVILEGES ON *.* TO ''@'%' WITH GRANT OPTION;
+CREATE USER 'tradeideasm'@'%' IDENTIFIED BY 'YDprod1';
+GRANT ALL PRIVILEGES ON *.* TO 'tradeideasm'@'%' WITH GRANT OPTION;
 
 TODO:
 gvim
-mumble
-intellij
-setup hangouts
 gedit
 mcollective
-
