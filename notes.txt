@@ -31,6 +31,8 @@ install mplayer
 install pip3
 install iotop
 install vim-gtk3
+install ncdu
+install ffmpeg
 tigervnc viewer/server
 x11vnc
 
@@ -51,3 +53,9 @@ TODO:
 gvim
 gedit
 mcollective
+
+# for mat (eclipse Memory Analyser Tool)
+install libwebkitgtk-1.0-0 libwebkitgtk-3.0-0
+
+# for digital camera
+sudo apt-get install exfat-fuse exfat-utils
