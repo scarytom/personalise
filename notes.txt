@@ -33,8 +33,10 @@ install iotop
 install vim-gtk3
 install ncdu
 install ffmpeg
+install jq
 tigervnc viewer/server
 x11vnc
+keepass2
 
 keyboard bindings
 unbind annoying XFCE keybindings – Settings » Window Manager » Keyboard 
