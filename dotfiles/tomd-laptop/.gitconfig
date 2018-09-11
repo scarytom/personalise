@@ -1,0 +1,15 @@
+[user]
+	email = t.denley@strategic-blue.com
+	name = Tom Denley
+[push]
+	default = simple
+[color]
+        ui = true
+[pack]
+	threads = 2
+[pull]
+	rebase = true
+[rebase]
+	autoStash = true
+[remote "origin"]
+	fetch = +refs/notes/*:refs/notes/*
