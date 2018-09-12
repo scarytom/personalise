@@ -19,6 +19,10 @@ shopt -s histappend
 HISTSIZE=-1
 HISTFILESIZE=-1
 
+#mcollective
+export MCOLLECTIVE_SSL_PUBLIC=/home/tdenley/.mc/tdenley.pem
+export MCOLLECTIVE_SSL_PRIVATE=/home/tdenley/.mc/tdenley-private.pem
+
 export NO_AT_BRIDGE=1
 
 # check the window size after each command and, if necessary,
