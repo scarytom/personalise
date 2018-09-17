@@ -27,5 +27,5 @@ if [ -d "$HOME/.local/bin" ]; then
 fi
 
 if [ -d "$HOME/projects/blue-review-bootstrap" ]; then
-  SB_ROOT="$HOME/projects/blue-review-bootstrap"
+  export SB_ROOT="$HOME/projects/blue-review-bootstrap"
 fi
