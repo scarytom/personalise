@@ -13,3 +13,5 @@
 	autoStash = true
 [remote "origin"]
 	fetch = +refs/notes/*:refs/notes/*
+[core]
+	autocrlf = input

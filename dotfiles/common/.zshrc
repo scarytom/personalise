@@ -1927,3 +1927,4 @@ export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 zrclocal
 
 # vim:filetype=zsh foldmethod=marker autoindent expandtab shiftwidth=4
+export PATH="$HOME/.rbenv/bin:$PATH"
